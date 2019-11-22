@@ -1,9 +1,7 @@
-export default class DummyClass {
-    constructor() {
-        console.log(`@create time (ms) : ${new Date().getTime()}`)
-    }
+import { Calendar } from './calendar/calendar.ts'
 
-    test() {
-        console.log("This is a test use case, @author MR.X")
+export default class Calendars extends Calendar {
+    constructor() {
+        super()
     }
 }
